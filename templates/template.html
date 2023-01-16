@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% block body %}postavte 10{% endblock %}
+    {% if output %}
+        <h3>Результат:</h3>
+        {{ output }}
+    {% endif %}
+</body>
+</html>
